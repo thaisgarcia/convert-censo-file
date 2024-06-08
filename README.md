@@ -46,8 +46,8 @@ Você pode usar diversas ferramentas para executar os scripts Python deste repos
 Clone este repositório para sua máquina local usando o comando:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/thaisgarcia/convert-censo-file.git
+cd convert-censo-file
 ```
 
 ### 2. Preparar os Arquivos
