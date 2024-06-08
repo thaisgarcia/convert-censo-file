@@ -50,8 +50,10 @@ git clone https://github.com/thaisgarcia/convert-censo-file.git
 cd convert-censo-file
 ```
 
+
 ### 2. Preparar os Arquivos
 Certifique-se de que você tem os arquivos `Censo_2023_Aluno.txt` e `censo_alunos.xlsx` (este será gerado no processo) no diretório raiz do repositório clonado.
+
 
 ### 3. Gerar o Arquivo Excel a partir do Arquivo TXT
 Este script lê o arquivo TXT, processa os dados, separando-os em duas tabelas com base no tipo de registro (41 e 42), e depois combina essas tabelas em um único DataFrame. Por fim, ele salva os dados combinados em um arquivo Excel.
@@ -123,6 +125,7 @@ nomes_colunas = ['Tipo de registro', 'ID do aluno no Inep', 'Nome', 'CPF', 'Docu
 with pd.ExcelWriter('censo_alunos.xlsx') as writer:
     df_combinado.to_excel(writer, index=False, header=nomes_colunas)
 ```
+
 
 ### 4. Converter o Arquivo Excel de Volta para o Formato de Texto
 Após fazer todas alterações necessárias no arquivo Excel execute esse script. O script lê o arquivo Excel, processa os dados e escreve um novo arquivo de texto (censo_alunos_atualizado.txt). Ele mantém a primeira linha do arquivo TXT original e organiza os registros de acordo com a presença do valor 42.
