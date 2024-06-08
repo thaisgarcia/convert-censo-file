@@ -1,4 +1,4 @@
-# Tutorial: Processando Dados do Censo do MEC
+# Processamento de Registros do Arquivo de Alunos para o Censo do MEC
 
 Este repositório contém scripts Python para processar dados do censo do MEC, incluindo a leitura de um arquivo TXT, a geração de um arquivo Excel e a conversão desse arquivo Excel de volta para um formato de texto.
 <br>
